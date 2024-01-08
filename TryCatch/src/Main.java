@@ -10,23 +10,19 @@ public class Main {
             arr[i] = a;
             a *= 2;
         }
+        Scanner input = new Scanner(System.in);
 
-        int b;
-        do {
+        System.out.print("Lütfen 0 - 9 arası bir rakam giriniz : ");
+        int b = input.nextInt();
 
-            Scanner input = new Scanner(System.in);
+        try {
+            System.out.println("[ " + arr[b] + " ]");
 
-            System.out.print("Lütfen 0 - 9 arası bir rakam giriniz : ");
-            b = input.nextInt();
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
 
-            try {
-                System.out.println("[ " + arr[b] + " ]");
-
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
-
-            }
-        } while (b < 50);
-        System.out.println("Bitti");
+        } finally {
+            System.out.println("İşlem tamamlandı.");
+        }
     }
 }
