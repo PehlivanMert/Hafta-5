@@ -18,8 +18,9 @@ public class Main {
         try {
             System.out.println("[ " + arr[b] + " ]");
 
-        } catch (Exception e) {
-            System.out.println(e.getMessage());
+        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println(e.toString());
+
 
         } finally {
             System.out.println("İşlem tamamlandı.");
