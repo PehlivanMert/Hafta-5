@@ -40,7 +40,6 @@ public class Main {
             // Listeyi karıştırıyoruz
             Collections.shuffle(combinedList);
 
-
             System.out.println("\n" + (m + 1) + ".Hafta maçları:\n");
             System.out.println("Ev Sahibi  ||  Deplasman\n");               // Ve bir for döngüsü ile takımları eşleştirip ekrana yazdırıyoruz
             System.out.println("--------------------------");
