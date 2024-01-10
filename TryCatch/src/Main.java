@@ -1,29 +1,22 @@
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
+        int index;
+        do {
+        int [] arr = {1,2,3,4,5,6,7,8,9,10};
+        Scanner inp = new Scanner(System.in);
 
-        int[] arr = new int[10];
-        int a = 2;
-        for (int i = 0; i < arr.length; i++) {
-            arr[i] = a;
-            a *= 2;
-        }
-        Scanner input = new Scanner(System.in);
-
-        System.out.print("Lütfen 0 - 9 arası bir rakam giriniz : ");
-        int b = input.nextInt();
+        System.out.print("0 ve 9 arasında bir index numarası giriniz: ");
+         index = inp.nextInt();
 
         try {
-            System.out.println("[ " + arr[b] + " ]");
-
-        } catch (ArrayIndexOutOfBoundsException e) {
+            System.out.println("Girilen indexteki eleman : " + arr[index]);
+        }catch (ArrayIndexOutOfBoundsException e){
             System.out.println(e.toString());
-
-
-        } finally {
-            System.out.println("İşlem tamamlandı.");
+        }finally {
+            System.out.println("Program burada bitti");
         }
+        } while (index < 100);
     }
 }
