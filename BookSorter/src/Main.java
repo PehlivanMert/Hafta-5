@@ -24,6 +24,7 @@ public class Main {
         TreeSet<Books> books2 = new TreeSet<>(new CompareBookPagesSort());
         books2.addAll(books1);
 
+
         // //Kitapları sayfa sayısına göre sıralıp ekrana yazdırıyoruz.
 
         System.out.println("Kitabın Adı || Sayfa Sayısı\n--------------------------");
